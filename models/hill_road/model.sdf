@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='hill_road'>
+	<static>true</static>
+	<pose>18.4077 14.9514 0 0 0 0</pose>
+    <link name='link_0'>
+    
+    	<pose>-5.589 1.1373 0 0 0 2.1345</pose>
+		
+		<collision name="collision">
+		<geometry>
+			<box>
+	            <scale>0.1 0.1 0.1</scale>
+			</box>
+		</geometry>
+		</collision>
+		
+		<visual name="visual">
+		<cast_shadows>true</cast_shadows>
+		<geometry>
+			<mesh>
+				<uri>model://hill_road/mesh/model.dae</uri>
+	            <scale>0.1 0.1 0.1</scale>
+			</mesh>
+		</geometry>
+		</visual>
+    </link>
+  </model>
+</sdf>
