@@ -5,7 +5,7 @@
 ```ruby
 <sky>
     <clouds>
-    <speed> 0 </speed>
+        <speed> 0 </speed>
     </clouds>
 </sky>
 ```
@@ -18,11 +18,15 @@
 
     <sky>
         <clouds>
-        <speed> 0 </speed>
+            <speed> 0 </speed>
         </clouds>
     </sky>
 </scene>
 ```
 
 # Cách để thêm \<light\> vào trong gazebo:
-
+```
+    <light type="point" name="stop_light">
+        <pose>5.38 8.18 1.0 0 0 0</pose>
+    </light>
+```
