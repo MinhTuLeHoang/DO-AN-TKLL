@@ -1,0 +1,154 @@
+<sdf version='1.4'>
+  <world name='Tu world'>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <precon_iters>0</precon_iters>
+          <sor>1.400000</sor>
+          <use_dynamic_moi_rescaling>1</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0.00001</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>2000.000000</contact_max_correcting_vel>
+          <contact_surface_layer>0.01000</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+
+
+    <!-- A turtlebot symbol -->
+    <include>
+      <name>single_1</name>
+      <pose>-6 7 0 0 0 1.5708</pose>
+      <uri>model://single_road</uri>
+    </include>
+    
+    <include>
+      <name>single_2</name>
+      <pose>-5.57 3.04 0 0 0 0</pose>
+      <uri>model://single_road</uri>
+    </include>
+    
+    <include>
+      <name>single_3</name>
+      <pose>0.25 7 0 0 0 1.5708</pose>
+      <uri>model://single_road</uri>
+    </include>
+    
+    <include>
+      <name>single_4</name>
+      <pose>-6 1.56 0 0 0 1.5708</pose>
+      <uri>model://single_road</uri>
+    </include>
+    
+    <include>
+      <name>single_5</name>
+      <pose>0.25 1.56 0 0 0 1.5708</pose>
+      <uri>model://single_road</uri>
+    </include>
+    
+    <include>
+      <name>single_6</name>
+      <pose>0.24 3.04 0 0 0 0</pose>
+      <uri>model://single_road</uri>
+    </include>
+    
+
+
+    <!-- nga ba -->
+    <include>
+      <name>nga_ba_1</name>
+      <pose>-6.03 8.46 0.01 0 0 -1.5708</pose>
+      <uri>model://single_single_3</uri>
+    </include>
+    
+    <include>
+      <name>nga_ba_2</name>
+      <pose>-3.65 1.56 0.01 0 0 1.5708</pose>
+      <uri>model://single_single_3</uri>
+    </include>
+    
+    <include>
+      <name>nga_ba_3</name>
+      <pose>1.69 3.47 0.01 0 0 3.1416</pose>
+      <uri>model://single_single_3</uri>
+    </include>
+    
+    <include>
+      <name>nga_ba_4</name>
+      <pose>1.70 8.91 0.01 0 0 3.1416</pose>
+      <uri>model://single_single_3</uri>
+    </include>
+    
+
+
+    <!-- bien bao -->
+    <include>
+      <name>turn-right-ahead</name>
+      <pose>-6.13 7.08 -0.1 0 0 -1.5708</pose>
+      <uri>model://13-turn-right-ahead</uri>
+    </include>
+    
+    <include>
+      <name>turn-left_1</name>
+      <pose>-0.29 2.96 -0.1 0 0 -1.5708</pose>
+      <uri>model://12-turn-left-ahead</uri>
+    </include>
+    
+    <include>
+      <name>turn-left_2</name>
+      <pose>-5.34 3.41 -0.1 0 0 -3.1416</pose>
+      <uri>model://12-turn-left-ahead</uri>
+    </include>
+    
+    <include>
+      <name>turn-left_3</name>
+      <pose>0.57 6.34 -0.1 0 0 0</pose>
+      <uri>model://12-turn-left-ahead</uri>
+    </include>
+    
+    <include>
+      <name>stop</name>
+      <pose>-8.71 8.39 -0.1 0 0 1.5708</pose>
+      <uri>model://11-stop</uri>
+    </include>
+    
+    
+    
+
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+      <sky>
+        <clouds>
+        <speed>0</speed>
+        </clouds>
+      </sky>
+    </scene>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0.0 0.0 17.0 0 1.5708 0</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>
