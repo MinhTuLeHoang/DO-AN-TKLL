@@ -26,7 +26,7 @@
 
 # Cách để thêm \<light\> vào trong gazebo:
 ```
-    <light type="point" name="stop_light">
-        <pose>5.38 8.18 1.0 0 0 0</pose>
-    </light>
+<light type="point" name="stop_light">
+    <pose>5.38 8.18 1.0 0 0 0</pose>
+</light>
 ```
