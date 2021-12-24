@@ -1,6 +1,6 @@
 ## What is this folder ?
 
-This folder is holding some relatie files, such as: flowchart, ...
+This folder is holding project flowchart.
 
 
 ## 2 ways to open the flow chart
