@@ -7,10 +7,10 @@ This folder is holding some relatie files, such as: flowchart, ...
 
 - First solution:
 
-    - Download file.drawio
+    - Download **file.drawio**
     - Open https://app.diagrams.net/ in new browser and select the downloaded file.
 
 - Second solution:
 
-    - Download file.drawio.html (this is a html file)
+    - Download **file.drawio.html** (this is a html file)
     - Open that file with browser
