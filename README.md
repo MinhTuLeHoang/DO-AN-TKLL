@@ -25,4 +25,4 @@
 
 # Video demo
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/DTwMcBLK1xg/0.jpg)](https://www.youtube.com/watch?v=DTwMcBLK1xg "Video Title")
-> Click to play
+> Click image to play in youtube
